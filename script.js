@@ -2268,7 +2268,7 @@ const trainers = [
 ];
 
 trainers.map((trainer) => {
-	trainer.profile_pic_id = `https://github.com/github-dsiafrica/TrainersRegistryPhotos/blob/main/photos/${
+	trainer.profile_pic_id = `https://github.com/github-dsiafrica/TrainersRegistryPhotos/blob/main/${
 		trainer.record_id
 	}_dsi_4th_consort_me_arm_1_profile_pic.${
 		trainer.profile_pic.split(".")[1]
