@@ -2275,5 +2275,9 @@ trainers.map((trainer) => {
 	}?raw=true`;
 });
 
+const sortedTrainers = trainers.sort((a, b) =>
+	a.firstname.toLowerCase().localeCompare(b.firstname.toLowerCase())
+);
+
 // Save the trainers to JSON
-fs.writeFileSync("trainers.json", JSON.stringify(trainers, null, 2));
+fs.writeFileSync("trainers.json", JSON.stringify(sortedTrainers, null, 2));
