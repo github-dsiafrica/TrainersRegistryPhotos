@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const trainers = [
+let trainers = [
 	{
 		record_id: "1",
 		redcap_event_name: "DS-I 4th Consort Meeting (Arm 1: Arm 1)",
@@ -2267,12 +2267,19 @@ const trainers = [
 	},
 ];
 
-trainers.map((trainer) => {
-	trainer.profile_pic_id = `https://github.com/github-dsiafrica/TrainersRegistryPhotos/blob/main/${
-		trainer.record_id
-	}_dsi_4th_consort_me_arm_1_profile_pic.${
-		trainer.profile_pic.split(".")[1]
-	}?raw=true`;
+trainers = trainers.map((trainer) => {
+	return {
+		...trainer,
+		profile_pic_id: `https://github.com/github-dsiafrica/TrainersRegistryPhotos/blob/main/${
+			trainer.record_id
+		}_dsi_4th_consort_me_arm_1_profile_pic.${
+			trainer.profile_pic.split(".")[1]
+		}?raw=true`,
+		job_title:
+			trainer.job_title.length > 100
+				? `${trainer.job_title.slice(0, 100)}...`
+				: trainer.job_title,
+	};
 });
 
 const sortedTrainers = trainers.sort((a, b) =>
