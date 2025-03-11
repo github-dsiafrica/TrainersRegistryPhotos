@@ -407,7 +407,7 @@ const trainers = [
 		institution: "African Center of Excellence in Bioinformatics",
 		country_residence: "Mali",
 		nationality: "Mali",
-		profile_pic: "",
+		profile_pic: "Aboubacar.jpeg",
 		biography:
 			"He holds a Bachelor's degree in Computer Network Maintenance from the Faculty of Science and Technology in Bamako, and a Master's degree in Data Science from the International University of Excellence in Bamako.  He is currently System Admin at the African Center of Excellence in Bioinformatics.",
 		job_title: "System Admin |  Data Scientist",
