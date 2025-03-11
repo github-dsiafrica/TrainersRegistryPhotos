@@ -544,7 +544,7 @@ const trainers = [
 		institution: "University of Botswana",
 		country_residence: "Botswana",
 		nationality: "Botswana",
-		profile_pic: "Untitled (2.1).png",
+		profile_pic: "Untitled.png",
 		biography:
 			"Busisiwe Mlotshwa, a distinguished scientist, and an avid enthusiast for life, began her academic journey at the University of Botswana in 2001. She swiftly rose through the ranks at the Botswana Harvard School of Public Health AIDS Initiative Partnership (BHP), focusing on HIV-1C pathogenicity and HAART efficacy.    In 2009, she earned a Shell Centenary Scholarship Fund and embarked on a Master of Science in Quantitative Genetics and Genome Analysis at the University of Edinburgh, exploring the interplay of genetics, cognition, and BMI in a Scottish cohort.    Taking on new roles, Busisiwe became Laboratory Manager at the HIV Pathogenesis Programme in 2010, adding an administrative dimension to her scientific expertise.    In 2014, she secured a prestigious PhD fellowship with the Collaborative African Genomics Network (CAfGEN), enhancing her skills in bioinformatics and genomics during a transformative two-year stint at Baylor College of Medicine in Houston, Texas.    Currently, Busisiwe is on the cusp of completing groundbreaking research on paediatric TB disease in sub-Saharan Africa.    Beyond her scientific pursuits, Busisiwe finds joy in leisurely running and passionately supports the Ferrari team in Formula 1 racing.  ",
 		job_title: "PhD Student",
