@@ -1,4 +1,6 @@
-const res = [
+const fs = require("fs");
+
+const trainers = [
 	{
 		record_id: "1",
 		redcap_event_name: "DS-I 4th Consort Meeting (Arm 1: Arm 1)",
@@ -2265,9 +2267,8 @@ const res = [
 	},
 ];
 
-// For each trainer, create a new field for the profile picture of the form https://github.com/github-dsiafrica/4thConsortiumMeeting/blob/main/photos/315_dsi_4th_consort_me_arm_1_profile_pic.jpg?raw=true where 315 is replaced by the record_id of the trainer
-trainers.forEach((trainer) => {
-	trainer.profile_pic_id = `https://github.com/github-dsiafrica/4thConsortiumMeeting/blob/main/photos/${
+trainers.map((trainer) => {
+	trainer.profile_pic_id = `https://github.com/github-dsiafrica/TrainersRegistryPhotos/blob/main/photos/${
 		trainer.record_id
 	}_dsi_4th_consort_me_arm_1_profile_pic.${
 		trainer.profile_pic.split(".")[1]
@@ -2275,5 +2276,4 @@ trainers.forEach((trainer) => {
 });
 
 // Save the trainers to JSON
-const fs = require("fs");
 fs.writeFileSync("trainers.json", JSON.stringify(trainers, null, 2));
